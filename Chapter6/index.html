@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Execution context, variable environment and Scope of variables.</title>
+</head>
+<body>
+
+<P> Every execution context has its own variable environment, where defined variables with in that context will get initilaized.</P>    
+
+<p> Also every exectution context has a reference to its outer environment.</p>
+    
+<P> Here the function second will log as global for myVar eventhought it does not defined it within itself, as myVar is in its outer environment which is global execution context.</P>    
+
+<p> In this code the both first and second functions are defined in the global level and will be available to the global exection context, So the both functions will have a reference to the global execution context as their lexical environment. Rememeber you can see both functions with this command. So the variable defined in the global execution context is accessible (scope is visible) to the second method. </p>    
+<script src="first.js"></script>
+
+</body>
+</html>
