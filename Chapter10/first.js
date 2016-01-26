@@ -34,3 +34,11 @@ value = '0' == '';
 console.log(' \'0\' == \'\'  : ' + value);
 value = 0 == '';
 console.log('0 == \'\'  : ' + value);
+
+console.log('Strick equality === operator');
+value = 3 === 3;
+console.log(' 3 === 3 : '  + value );
+value = 3 === '3';
+console.log(' 3 === \'3\' : '  + value );
+
+console.log('Strick unequality !== will behave same and will take the type of the values into action when checking the eqality');
