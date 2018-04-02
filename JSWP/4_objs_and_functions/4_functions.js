@@ -20,3 +20,5 @@ console.log(someFunction.someProperty);
  */
 
 console.log(someFunction.name);
+console.log("Type of function : " + typeof someFunction);
+console.log("Functions are objects .. : " + (someFunction instanceof Object));
