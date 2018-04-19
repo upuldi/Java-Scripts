@@ -8,9 +8,11 @@
 
 
 function someFunction() {
-  console.log("some function");
+  console.log("Some function ");
 }
 someFunction.someProperty = "Some Value"
+
+someFunction();
 
 console.log(someFunction);
 console.log(someFunction.someProperty);

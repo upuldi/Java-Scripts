@@ -15,7 +15,7 @@ var person = {
   }
 }
 
-var greetName = function(x) {
+var greetFunction = function(x) {
   console.log(x);
   console.log("Hello " + this.printName());
 }
@@ -30,8 +30,12 @@ var greetName = function(x) {
  * BIND DOES NOT EXECUTE THE FUNCTION UNLIKE CALL
  */
 
-var boundedFunction = greetName.bind(person,"someValue");
+var boundedFunction = greetFunction.bind(person,"someValue");
 boundedFunction();
+
+//You can do this as well, just binding with the object and later calling with params
+var anotherBound = greetFunction.bind(person);
+boundedFunction("Ausome value,,,,,,......(.)");
 
 /**
  * The same can be defined in many ways
@@ -42,3 +46,17 @@ var anotherFunctionBoundedOntheFly = function(x) {
 }.bind(person);
 
 anotherFunctionBoundedOntheFly("Holla");
+
+
+//Another example
+var devSettings = {
+  env: "DEVELOPMENT",
+  dbServer: "sql"
+}
+var makeuseOfDevSettings = function (x, y, z) {
+  console.log(this.env);
+  console.log(this.dbServer);
+  console.log(x + " " + y + " " + z);
+}.bind(devSettings);
+
+makeuseOfDevSettings(5, 10, 15);

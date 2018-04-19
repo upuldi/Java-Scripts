@@ -12,15 +12,22 @@
 /**
  * This function will get executed.
  */
-someFunction();
+simpleFunction();
 
 // The value for this variable would be undefined..
-console.log(someVariable);
+console.log("someVariable :" + someVariable);
+
+/**
+ * When a variable is not defined, JS engine throws an error saying it is not defined
+ * Undefined is NOT variable is not defined, It is a value has never been assigned to a variable.
+ * 
+ */
+// console.log(variableWhichIsNotDefined);
 
 var someVariable = "test";
 
-function someFunction() {
-  console.log("Some function...");
+function simpleFunction() {
+  console.log("Inside  simpleFunction...");
 }
 
 

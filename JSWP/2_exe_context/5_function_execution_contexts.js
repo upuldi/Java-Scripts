@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * When the code is execued within the function a execution context is created for that execution
+ * 
+ */
+
 function a() {
   var someVariable = "AA value"
   console.log("function a..." + someVariable);

@@ -3,6 +3,8 @@
 // this is the value a variable will receive at the creation phase of the exection context..
 // undefined is a value in JS,it is not wrap inside quates like a string
 
+// Undefined is NOT variable has never been declared, it is a value has never been assigned to the variable.
+
 var a; //get undefined
 if (a === undefined) {
   console.log("a is undefined...");
