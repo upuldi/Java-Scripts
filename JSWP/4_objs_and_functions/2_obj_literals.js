@@ -15,7 +15,12 @@ var english = {}
 var spanish = {}
 
 english.greeting = "Hello"
-spanish.greeting = "Hola"
+english["code"] = "EN"
 
-console.log(english.greeting);
-console.log(spanish.greeting);
+spanish.greeting = "Hola"
+spanish["code"] = "SP"
+
+
+console.log(english);
+console.log(spanish);
+

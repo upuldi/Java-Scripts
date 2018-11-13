@@ -3,7 +3,6 @@
  */
 
 //Borrowing functionality
-
 var context1 = {
   name: "Upul",
   age: 32
@@ -18,6 +17,8 @@ function commonFunction() {
   console.log(this.name);
 }
 
+//Here we have used apply() to set the context to the function...
+//but dont know how this defines the brrowing the functionality
 commonFunction.apply(context1);
 commonFunction.apply(context2);
 
@@ -31,8 +32,8 @@ commonFunction.apply(context2);
  *
  */
 
-function multiply(a,b) {
-  console.log(a*b);
+function multiply(a, b) {
+  console.log(a * b);
 }
 
 /**
@@ -40,8 +41,8 @@ function multiply(a,b) {
  * first parameter always the return method would need only 1 parameter
  * to execute it and the 2 will be permenatly placed as the first param.
  */
-var multiByTwo = multiply.bind(this,2);
+var multiByTwo = multiply.bind(this, 2);
 multiByTwo(99);
 
 //Curring
-multiply.bind(this,5)(10);
+multiply.bind(this, 5)(10);

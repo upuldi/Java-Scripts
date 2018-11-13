@@ -7,7 +7,7 @@ function someFunction() {
   var functionArray = [];
   for (var i = 0; i < 3; i++) {
     functionArray.push(
-      function () {
+      function() {
         console.log(i);
       }
     );

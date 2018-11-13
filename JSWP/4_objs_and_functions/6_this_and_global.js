@@ -11,7 +11,9 @@ function anotherFunction() {
 }
 
 var someVariable="glob"
-console.log(this);
+console.log("some variable : " + someVariable);
+console.log(" Global this : " + this);
+console.log(" Global this.someVariable : " +  this.someVariable);
+
 someFunction();
-console.log(this.someVariable);
 anotherFunction();

@@ -1,6 +1,6 @@
 'use strict';
 /**
- * Objects are memory locations
+ * Objects are memory locations, can be created with new keywords or with {}
  * Properties can be added or accessed usiing [] or . operators
  */
 var obj = new Object();

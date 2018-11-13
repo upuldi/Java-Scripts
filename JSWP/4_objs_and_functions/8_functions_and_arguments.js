@@ -40,3 +40,11 @@ function withSpread(x,y, ...z) {
 withSpread(5);
 withSpread(5,10);
 withSpread(5,10,15,20,25,30);
+
+
+function anotherExampleWithSpred(...k) {
+  console.log(" K Length is : " + k.length)
+  console.log(" K first index is : " +  k[0])
+}
+
+anotherExampleWithSpred(10,20,30,40,50);

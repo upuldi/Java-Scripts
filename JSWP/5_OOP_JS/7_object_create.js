@@ -18,6 +18,7 @@ newObject.newFiled = " new object filed...."
  //See the resulting object is empty but its prototype has been pointed to the given object..
  console.log(Object.keys(newObject));
  console.log(newObject.greet());
+ console.log(newObject);
 
  console.log(" newobject __proto__ : " +  newObject.__proto__);
  console.log(" newobject __proto__ : " +  Object.keys(newObject.__proto__));

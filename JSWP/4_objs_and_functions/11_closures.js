@@ -1,5 +1,5 @@
 /**
- * Closure has access to the outside variables.
+ * Closure have access to the outside variables.
  * 
  */
 

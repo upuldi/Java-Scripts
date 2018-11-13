@@ -6,7 +6,7 @@
 *   returns a value, does not get hoiested
  */
 
-// This is a function statement,
+// This is a function statement, Function statements are tipical function definitions
 function someFunctionDefinition(){
   console.log("this is a function statement");
 }
